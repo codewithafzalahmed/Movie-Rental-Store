@@ -165,10 +165,10 @@ namespace MovieRentalStore.Controllers
                 {
 
                     // temp code . this is to use roles 
-                    var roleStore = new RoleStore<IdentityRole>(new ApplicationDbContext());
-                    var roleManager = new RoleManager<IdentityRole>(roleStore);
-                    await roleManager.CreateAsync(new IdentityRole("ApplicationManager"));
-                    await UserManager.AddPasswordAsync(user.Id, "ApplicationManager");
+                    //var roleStore = new RoleStore<IdentityRole>(new ApplicationDbContext());
+                    //var roleManager = new RoleManager<IdentityRole>(roleStore);
+                    //await roleManager.CreateAsync(new IdentityRole("ApplicationManager"));
+                    //await UserManager.AddPasswordAsync(user.Id, "ApplicationManager");
                     
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                     
