@@ -197,6 +197,10 @@
     <Compile Include="Migrations\201607141433377_add-Genre-values.Designer.cs">
       <DependentUpon>201607141433377_add-Genre-values.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201607141505520_add-users-and-roles.cs" />
+    <Compile Include="Migrations\201607141505520_add-users-and-roles.Designer.cs">
+      <DependentUpon>201607141505520_add-users-and-roles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -284,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201607141433377_add-Genre-values.resx">
       <DependentUpon>201607141433377_add-Genre-values.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607141505520_add-users-and-roles.resx">
+      <DependentUpon>201607141505520_add-users-and-roles.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
