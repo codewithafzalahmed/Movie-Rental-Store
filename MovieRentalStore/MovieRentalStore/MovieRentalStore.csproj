@@ -171,7 +171,7 @@
     <Compile Include="BusinessModels\Customer.cs" />
     <Compile Include="BusinessModels\Genre.cs" />
     <Compile Include="BusinessModels\MembershipType.cs" />
-    <Compile Include="BusinessModels\Min18YearsIfAMember.cs" />
+    <Compile Include="CustomAttribute\Min18YearsIfAMember.cs" />
     <Compile Include="BusinessModels\Movie.cs" />
     <Compile Include="BusinessModels\Rental.cs" />
     <Compile Include="BusinessModels\RoleName.cs" />
@@ -181,8 +181,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
