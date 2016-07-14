@@ -189,6 +189,10 @@
     <Compile Include="Migrations\201607141411219_afzal-AddMembershipTypes.Designer.cs">
       <DependentUpon>201607141411219_afzal-AddMembershipTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201607141426050_membershiptypeNames.cs" />
+    <Compile Include="Migrations\201607141426050_membershiptypeNames.Designer.cs">
+      <DependentUpon>201607141426050_membershiptypeNames.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -270,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201607141411219_afzal-AddMembershipTypes.resx">
       <DependentUpon>201607141411219_afzal-AddMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607141426050_membershiptypeNames.resx">
+      <DependentUpon>201607141426050_membershiptypeNames.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
