@@ -193,6 +193,10 @@
     <Compile Include="Migrations\201607141426050_membershiptypeNames.Designer.cs">
       <DependentUpon>201607141426050_membershiptypeNames.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201607141433377_add-Genre-values.cs" />
+    <Compile Include="Migrations\201607141433377_add-Genre-values.Designer.cs">
+      <DependentUpon>201607141433377_add-Genre-values.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -277,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201607141426050_membershiptypeNames.resx">
       <DependentUpon>201607141426050_membershiptypeNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607141433377_add-Genre-values.resx">
+      <DependentUpon>201607141433377_add-Genre-values.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
