@@ -3,25 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using AutoMapper;
+using MovieRentalStore.DTOs;
+using MovieRentalStore.BusinessModels;
 namespace MovieRentalStore.App_Start
 {
     public class MappingProfile : Profile
     {
         public MappingProfile()
         {
-            // Domain to Dto
-            Mapper.CreateMap<Customer, CustomerDto>();
-            Mapper.CreateMap<Movie, MovieDto>();
-            Mapper.CreateMap<MembershipType, MembershipTypeDto>();
-            Mapper.CreateMap<Genre, GenreDto>();
+
+            var config = new MapperConfiguration(cfg =>
+            {
+                // Domain to Dto
+                cfg.CreateMap<Customer, Customer>();
+                cfg.CreateMap<MembershipType, MembershipType>();
+                cfg.CreateMap<Genre, Genre>();
 
 
-            // Dto to Domain
-            Mapper.CreateMap<CustomerDto, Customer>()
-                .ForMember(c => c.Id, opt => opt.Ignore());
+                // Dto to Domain
+                cfg.CreateMap<CustomerDto, Customer>().ForMember(c => c.Id, opt => opt.Ignore());
+                cfg.CreateMap<MovieDto, Movie>().ForMember(c => c.Id, opt => opt.Ignore());
 
-            Mapper.CreateMap<MovieDto, Movie>()
-                .ForMember(c => c.Id, opt => opt.Ignore());
+            });
+            
+
         }
     }
 }

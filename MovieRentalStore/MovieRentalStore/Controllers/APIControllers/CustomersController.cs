@@ -1,10 +1,13 @@
-﻿using MovieRentalStore.DTOs;
+﻿using AutoMapper;
+using MovieRentalStore.BusinessModels;
+using MovieRentalStore.DTOs;
 using MovieRentalStore.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using System.Data.Entity;
 
 namespace MovieRentalStore.Controllers.APIControllers
 {
